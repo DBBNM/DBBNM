@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #11151c;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    font-family: 'Inter', sans-serif;
+}
+section
+{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+
+}
+section video
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+    section h1 {
+        position: relative;
+        color: #fff1e6;
+        font-size: 5em;
+        text-shadow: 6px 3px #212d40;
+        margin-left: 150px;
+    }
+    section p {
+        position: relative;
+        color: #fff1e6;
+        font-size: 2.2em;
+        padding: 10px;
+        text-shadow: 2px 2px #212d40;
+    }
+.content {
+    padding: 50px;
+    margin-top: 200px;
+    border-color: #35455D;
+    background: #35455D;
+}
+.list
+{
+    margin-left: 10px;
+
+}
+
+
+.accordion {
+    background-color: #364156;
+    color: #ECDDD0;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.2s;
+    align-content: flex-end;
+    font-family: 'Inter', sans-serif;
+}
+
+    .active, .accordion:hover {
+        background-color: #212d40;
+    }
+
+.panel {
+    padding: 18px;
+    display: none;
+    background-color: #364156;
+    overflow: hidden;
+    font-size: 2em;
+    color: #ECDDD0;
+    text-shadow: 2px 2px #212d40;
+}
+.image
+{
+   margin-left: 350px;
+   margin-top: 50px;
+   
+
+}
+.final_remarks {
+    font-family: sans-serif;
+    padding: 25px;
+    margin-left: 10px;
+    color: #fff1e6;
+}
+    .final_remarks h2 {
+        position: relative;
+        font-size: 3em;
+        color: #fff1e6;
+        text-shadow: 6px 2px #212d40;
+    }
+    .final_remarks p {
+        position: relative;
+        font-size: 2.2em;
+        color: #fff1e6;
+        text-shadow: 4px 2px #212d40;
+    }
+    .bottom
+    {
+        position: absolute;
+        margin-top: 790px;
+        font-size: 0.5em;
+    }

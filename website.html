@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Digital footprint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.webp">
+</head>
+<body>
+    <section>
+        <video src="wrld.mp4" autoplay="" muted="" loop=""></video>
+    </section>
+    <section>
+        <div class="content">
+            <h1>Your Digital Footprint</h1>
+            <p>
+                A Digital footprint is the trace you leave on the internet with all the posts and whatnot you would upload on social media. Your digital footprint can have a massive impact on your future, with things like potential jobs.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="accordion_whole">
+            <button type="button" class="accordion"> 3 Steps to stay safe:(Click Here to see!) </button>
+            <div class="panel">
+                <d1>
+                    <dt> Avoid putting hateful and or inappropriate comments or posts</dt>
+                    <dd>  -such as things like revealing photos of your body, or the wrong way to put your opinion out there for certain things like political issues or just small things like small-time celebrities.</dd>
+
+                    <dt> Keep everything private</dt>
+                    <dd>  -simply just don't have anything on your social media at all.</dd>
+
+                    <dt>Think before you post</dt>
+                    
+                    <div class="image">
+                        <img src="post.png" alt="" width="600" height="450" />
+                    </div>
+                    
+                </d1>
+            </div>
+        </div>       
+    </section>
+    <section>
+        <div class="final_remarks">
+            <h2> Final remarks</h2>
+            <p>
+                With the information described in videos I've seen and what I've learned about through social media, no matter what you put on the internet, it can be found. If there was one thing I could tell you, it would be to never post anything political, or inappropriate on the internet.
+
+            </p>
+        </div>
+        <div class="bottom">
+            <p>
+                This was made by Dalenique Barker and Byron Nelson-Mullin.
+                Written and researched by Byron Nelson-Mullin, and
+                coded by Dalenique Barker
+            </p>
+        </div>
+    </section>
+    <script>
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function () {
+            let value = 1 + window.scrollY / -550;
+            video.style.opacity = value;
+        })
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
